@@ -2,7 +2,7 @@ NAME			=	HAL
 CFLAGS			=	-Wall -Werror -Wextra
 USER			=	ytoro-mo
 
-HEADERS			=	calculator.h
+HEADERS			=	operations.h
 SRCS			=	$(shell find . -iname "*.c")
 OBJS			=	${SRCS:.c=.o}
 
@@ -23,7 +23,7 @@ clean:
 	@rm -f $(OBJS)
 
 fclean: clean
-	@rm -f $(NAME) $(NAME_BONUS)
+	@rm -f $(NAME)
 	
 re: fclean all
 
